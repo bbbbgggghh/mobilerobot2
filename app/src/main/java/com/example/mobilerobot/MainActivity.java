@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     if 암구호 입력 성공
                         robot.goTo("홈베이스"); //홈베이스로 이동
                     else
-                        robot.beWithMe(); //따라가기
+                        robot.followMe(); //따라가기
                         robot.startTelepresence(robot.getAdminInfo().getName(), robot.getAdminInfo().getUserId()); //관리자에게 전화
                     
                     //관리자 도착 시
