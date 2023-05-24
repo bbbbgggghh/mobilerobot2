@@ -37,17 +37,18 @@ public class MainActivity extends AppCompatActivity {
                 //서버에 야간경비 시작했다고 보냄 -> 인체감지 센서 활성화
                 
                 //서버에서 센서신호 받음
-                robot.goTo("받은 센서위치"); //센서위치로 이동
-                //서버로 테미 위치 보내기
+                    robot.goTo("받은 센서위치"); //센서위치로 이동
+                    //서버로 테미 위치 보내기
                 
-                //암구호 입력창 인텐트
-                if 암구호 입력 성공
-                    robot.goTo("홈베이스"); //홈베이스로 이동
-                else
-                    robot.beWithMe(); //따라가기
-                    robot.startTelepresence(robot.getAdminInfo().getName(), robot.getAdminInfo().getUserId()); //관리자에게 전화
+                    //암구호 입력창 인텐트
+                    if 암구호 입력 성공
+                        robot.goTo("홈베이스"); //홈베이스로 이동
+                    else
+                        robot.beWithMe(); //따라가기
+                        robot.startTelepresence(robot.getAdminInfo().getName(), robot.getAdminInfo().getUserId()); //관리자에게 전화
                     
-                
+                    //관리자 도착 시
+                        robot.goTo("홈베이스");
                 
             }
         });
